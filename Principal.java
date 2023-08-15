@@ -11,8 +11,11 @@ public class Principal {
         scanner.close();
 
         Calculadora calculadora = new Calculadora();
-        int multiplicacion = calculadora.multiplicarUsandoSumas(num1, num2);
 
-        System.out.println("El resultado de la multiplicación es: " + multiplicacion);
+        int multiplicacionSumas = calculadora.multiplicarUsandoSumas(num1, num2);
+        System.out.println("El resultado de la multiplicación usando suma es: " + multiplicacionSumas);
+
+        int multiplicacionDirecta = calculadora.multiplicar(num1, num2);
+        System.out.println("La multiplicación es: " + multiplicacionDirecta);
     }
 }
